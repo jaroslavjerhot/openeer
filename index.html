@@ -1,0 +1,19 @@
+<body>
+  <h1>Redirecting...</h1>
+</body>
+
+<script>
+  alert("Redirecting...");
+const routes = {
+  "myApp": "https://script.google.com/macros/s/XXXX/exec",
+  "yt": "https://youtube.com"
+};
+
+const path = location.pathname.replace("/", "");
+
+if (routes[path]) {
+  location.href = routes[path];
+} else {
+  document.body.innerHTML = "Not foundx";
+}
+</script>
